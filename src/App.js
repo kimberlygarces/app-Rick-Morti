@@ -2,6 +2,8 @@
 import React, {useEffect, useState} from "react";
 import Navbar from "./components/Navbar";
 import Characters from "./components/Characters";
+import Pagination from "./components/Paginations";
+
 
 function App() {
 const [characters, setcharacters] = useState([])
@@ -26,7 +28,10 @@ const fetchCharacters = (url) => {
      <Navbar brand="Rick and Morty App"/>
 
       <div className="container mt-5">
+          <Pagination/>
           <Characters characters={characters}/>
+          <Pagination/>
+
       </div>
        
      </div>
