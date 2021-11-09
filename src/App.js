@@ -36,12 +36,14 @@ const fetchCharacters = (url) => {
 
     }, [])
 
+
     return (
       <div>
 
      <Navbar brand="Rick and Morty App"/>
 
       <div className="container mt-5">
+        {/* component paginación */}
           <Pagination 
               prev={info.prev} 
               next={info.next} 

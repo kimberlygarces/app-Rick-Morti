@@ -11,6 +11,7 @@ const Pagination = ({prev, next, onPrevios, onNext}) => {
         onNext()
 
     }
+ 
 
     return(
         <nav>
